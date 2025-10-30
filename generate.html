@@ -1,0 +1,33 @@
+<section id="generate-section">
+  <h2 class="section-title">图像生成</h2>
+  <p style="text-align:center; margin-bottom:2rem;">上传您的图像，我们将使用茯茶的金花菌为您生成独特的艺术作品</p>
+  <div class="generate-container">
+    <div class="upload-area" id="upload-area">
+      <p>点击或拖拽图像到此处上传</p>
+      <p style="font-size:0.9rem; color:#666;">支持 JPG, PNG, WEBP 格式，最大 5MB</p>
+      <input type="file" accept="image/*" style="display:none;" id="upload-input">
+    </div>
+    <div style="margin-top:1.5rem;">
+      <label>生成风格:</label>
+      <select style="width:100%; padding:0.5rem; margin:1rem 0;">
+        <option>金花密布</option>
+        <option>自然纹理</option>
+        <option>抽象艺术</option>
+        <option>传统风格</option>
+      </select>
+      <label>金花密度:</label>
+      <input type="range" min="1" max="10" value="5" style="width:100%; margin:1rem 0;">
+    </div>
+    <button id="generate-btn" style="width:100%; padding:1rem; background:#ff6b35; color:white; border:none; border-radius:10px; font-size:1.1rem; margin-top:1rem;">
+      开始生成
+    </button>
+    <div class="result-container">
+      <h3>生成结果</h3>
+      <img id="result-image" src="https://via.placeholder.com/800x800/eee/999?text=生成结果" alt="生成图像" style="max-width:100%; border-radius:10px; margin:1rem 0;">
+      <div>
+        <button style="padding:0.5rem 1rem; background:#2c5e1a; color:white; border:none; margin:0.5rem; border-radius:5px;">下载图像</button>
+        <button style="padding:0.5rem 1rem; background:#4caf50; color:white; border:none; margin:0.5rem; border-radius:5px;">分享作品</button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+<section id="garden-section">
+  <h2 class="section-title">我的茯茶庄园</h2>
+  <div class="garden-layout">
+    <div class="garden-panel">
+      <h3>茶树状态</h3>
+      <div class="tea-tree-display">
+        <img id="tea-tree-img" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIyMCIgZmlsbD0iIzUyMzA3ZiIvPjxjaXJjbGUgY3g9IjQwIiBjeT0iNDUiIHI9IjEwIiBmaWxsPSIjZmZkNTAwIi8+PGNpcmNsZSBjeD0iNjAiIGN5PSI0NSIgcj0iMTAiIGZpbGw9IiNmZmQ1MDAiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjY1IiByPSIxMCIgZmlsbD0iI2ZmZDUwMCIvPjwvc3ZnPg==" alt="茶树" />
+        <p id="tree-stage">种子阶段</p>
+      </div>
+      <div class="progress-bar">
+        <label>生长进度:</label>
+        <div class="bar-outer">
+          <div id="growth-bar" class="bar-inner" style="width: 0%"></div>
+        </div>
+        <span id="progress-text">0%</span>
+      </div>
+      <div class="resources">
+        <p>💧 水资源: <span id="water-count">10</span></p>
+        <p>🌿 营养值: <span id="nutrient-count">5</span></p>
+      </div>
+      <div class="inventory">
+        <p>🍃 新鲜茶叶: <span id="leaves-count">0</span></p>
+        <p>🍵 成品茶饼: <span id="cakes-count">0</span></p>
+      </div>
+    </div>
+    <div class="action-panel">
+      <h3>茶园操作</h3>
+      <button id="plant-btn" class="action-btn">种下茶树苗</button>
+      <button id="water-btn" class="action-btn">浇水</button>
+      <button id="fertilize-btn" class="action-btn">施肥</button>
+      <button id="harvest-btn" class="action-btn" disabled>采摘</button>
+      <button id="pan-fry-btn" class="action-btn" disabled>炒茶</button>
+      <button id="press-cake-btn" class="action-btn" disabled>压制成型</button>
+      <div id="message" class="message"></div>
+    </div>
+  </div>
+</section>
+<script type="module" src="../js/garden.js"></script>
